@@ -53,7 +53,7 @@ int main(){
     printf("Socket Successfully binded");
     
     //SERVER LISTENING
-    if((listen(sockfd.5)) != 0){
+    if((listen(sockfd,5)) != 0){
         printf("Listen failed");
         exit(0);
     }
