@@ -12,6 +12,7 @@
 #include <netinet/tcp.h>
 #include <netinet/ip.h>
 #include <netinet/if_ether.h>
+#include<arpa/inet.h> 
 
 //net extension
 #include <netdb.h>
@@ -95,5 +96,5 @@ void ProcessPacket(unsigned char *, int){
     }
     
     //static display
-    printf("ICMP : %d IGMP : %d TCP : %d UDP : %d OSPF : %d Others : %d \r",icmp,igmp,tcp,udp,ospf,others)
+    printf("ICMP : %d IGMP : %d TCP : %d UDP : %d OSPF : %d Others : %d \r",icmp,igmp,tcp,udp,ospf,others);
 }
